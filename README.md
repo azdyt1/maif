@@ -1,16 +1,15 @@
 # maif
 ### Dataset
 Original links of datasets are:
-- https://tianchi.aliyun.com/dataset/649
+- https://www.yelp.com/dataset
 - https://grouplens.org/datasets/movielens/1m/
-### Matching model
+- 
+### train movie
 
-- For dataset, you can use `python matching_model/preprocess/data.py {dataset_name}` to generate a specific dataset for the matching model ComiRec training.
-- For training, you can use `python matching_model/train.py --dataset {dataset_name} --model_type {model__name}` to train the ComiRec model.
+- For dataset, you can use `python preprocess/movie_data_gen.py` and `python preprocess/movie_sku_info_gen.py` to generate the movie dataset for the maif model training.
+- For training, you can use `python train_movie/train_movie.py {dataset} ...parameters` to train the maif on movie dataset.
 
-### Ranking model
-- For dataset, you can use `python ranking_model/preprocess/{dataset_name}_data_gen.py` to generate a specific dataset for the Ranking Model training.
-- For training, you can use `python ranking_model/train.py {dataset_name} {model_name} ...parameters` to train any ranking model you want.
+### train yelp
+- For dataset, you can use `python preprocess/yelp_data_gen.py` and `python preprocess/yelp_sku_info_gen.py` to generate the yelp dataset for the maif model training.
+- For training, you can use `python train_yelp/train_yelp.py {dataset} ...parameters` to train the maif on yelp dataset.
 
-### Re-ranking model
-- For re-ranking model, you can use `python ranking_model/test_rerank.py` to run the re-ranking model for testing.
