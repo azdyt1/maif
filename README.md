@@ -1,6 +1,5 @@
 # maif
 ### Dataset
-Original links of datasets are:
 - https://www.yelp.com/dataset
 - https://grouplens.org/datasets/movielens/1m/
 
